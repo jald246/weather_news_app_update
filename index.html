@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <header></header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Weather</li>
+        <li style="float: right">About</li>
+      </ul>
+    </nav>
+<section class="weather-section">
+        <div class="page">
+          <h1>LATEST WEATHER</h1>
+          <div class="archive">
+            <article class="article">
+              <section id="stats">
+                <div class="summary">
+                  <h2>Weather summary</h2>
+                  <h3 id="five-city"></h3>
+                  <p>Currently: <span id="current-desc"></span></p>
+                  <p>
+                    Tempature:
+                    <span id="current-temp"></span> °F
+                  </p>
+                  <p>Wind Chill: <span id="current-windChill"></span> °F</p>
+                  <p>Tempature: <span id="current-temp"></span> °F</p>
+                  <p>Wind Chill: <span id="current-windChill"></span></p>
+                  <p>Humidity: <span id="current-humid"></span>%</p>
+                  <p>Wind Speed: <span id="current-windSpeed"></span> mph</p>
+                </div>
+              </section>
+              <div>
+                <img src="" alt="Random Image" id="img" />
+              </div>
+            </article>
+
+            <!-- 5 day forecast -->
+            <div class="article-five-day">
+              <article id="forecastContainer">
+                <h2 id="forecastTitle">5 Day Forecast</h2>
+                <h3 id="city"></h3>
+                <div class="flex">
+                  <div class="flex-col">
+                    <span id="dayTitle1" class="col-head"></span>
+                    <img id="weatherIcon1" class="weatherIcon" />
+                    <span class="temp-data">
+                      <span id="data1"></span>
+                      <span>°F</span>
+                    </span>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle2" class="col-head"></span>
+                    <img id="weatherIcon2" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data2"></span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle3" class="col-head"></span>
+                    <img id="weatherIcon3" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data3"></span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle4" class="col-head"></span>
+                    <img id="weatherIcon4" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data4"></span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                  <div class="flex-col">
+                    <span id="dayTitle5" class="col-head"></span>
+                    <img id="weatherIcon5" class="weatherIcon" />
+                    <div class="temp-data">
+                      <span id="data5"></span>
+                      <span>°F</span>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+
+      <section class="news">
+        <div class="page">
+          <div id="main-article">
+              <h1>LATEST NEWS</h1>
+              <div class="archive">
+                  <article class="article">
+                    <img id="header-img" class="main-article" alt="main article" />
+                    <h2><a id="header-article"></a></h2>
+                    <p id="header-desc">No Article Description</p>
+                  </article>
+                  <!--4 articles-->
+                  <article class="article">
+                      <img id="article-img-1" src="" alt="kitten" />
+                      <h3><a id="article-link-1">No Article Title</a></h2>
+                      <p id="article-desc-1">No Article Description.</p>
+                  </article>
+                  <article class="article">
+                      <img id="article-img-2" src="" alt="kitten" />
+                      <h3><a id="article-link-2">No Article Title</a></h3>
+                      <p id="article-desc-2">No Article Description.</p>  
+                  </article>
+                  <article class="article">
+                      <img id="article-img-3" src="" alt="kitten" />
+                      <h3><a id="article-link-3">No Article Title</a></h3>
+                      <p id="article-desc-3">No Article Description.</p>
+                  </article>
+                  <article class="article">
+                      <img id="article-img-4" src="" alt="kitten" />
+                      <h3><a id="article-link-4">No Article Title</a></h3>
+                      <p id="article-desc-4">No Article Description.</p>
+                  </article>
+              </div>
+          </div>
+    </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year">2025</span>| Jessica Aldrete |<a href="https://tooeletech.edu/" target="_blank" rel="noopener noreferrer"> Tooele Technical College </a>
+        <br>last updated:<span id="updated">01/05/2026</span></p>
+    </footer>
+    <script src="weather-header.js"></script>
+  </body>
+</html>
