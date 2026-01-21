@@ -1,7 +1,8 @@
 const apiKey = "0371c49fb172bd62cb4a97ace4b8a605";
 const weatherURL =  `https://api.openweathermap.org/data/2.5/weather?q=tooele&units=imperial&appid=${apiKey}`;
 const newsURL = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=b34121ecd12d4fdab01b1905e4d62571`;
-/* const forecastURL =`https://api.openweathermap.org/data/2.5/forecast?q=tooele&units=imperial&appid=${apiKey}`;*/
+/* const forecastURL =`https://api.openweathermap.org/data/2.5/forecast?q=tooele&units=imperial&appid=${apiKey}`; */
+
 
 async function getData() {
     try{
@@ -91,7 +92,6 @@ getData();
   }
   }
   
-
 
   let currentDate = new Date().toLocaleDateString();
   let date = document.querySelector("#updated");
